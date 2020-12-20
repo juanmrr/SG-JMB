@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Práctica 2: Jungle Marble Bast</title>
+    <meta charset="utf-8">
+    <style>
+        body{
+            margin: 0;
+            overflow: hidden;
+        }
+        #EndGame {
+          display: none;
+          position: fixed;
+          top: 0;
+          opacity: 0.8;
+        }
+
+    </style>
+    <script type="text/javascript" src="../libs/three.js"></script>
+    <script type="text/javascript" src="../libs/jquery.js"></script>
+    <!--<script type="text/javascript" src="../libs/dat.gui.js"></script>-->
+    <script type="text/javascript" src="../libs/TrackballControls.js"></script>
+    <script type="text/javascript" src="../libs/ThreeBSP.js"></script>
+    <script type="text/javascript" src="../libs/Tween.js"></script>
+    <script type="text/javascript" src="../libs/Octree.js"></script>
+    <script type="text/javascript" src="../libs/MTLLoader.js"></script>
+    <script type="text/javascript" src="../libs/OBJLoader.js"></script>
+    <script type="text/javascript" src="display.js"></script>
+    <script type="text/javascript" src="nivel.js"></script>
+    <script type="text/javascript" src="System.js"></script>
+</head>
+<body>
+
+<!-- Div which will hold the Output -->
+<div id="WebGL-output">
+</div>
+
+<div id="EndGame">
+  <h2>Fin del Juego.</h2>
+
+  <button type="button" name="button" onclick="juego.nuevoJuego()">Reintentar</button>
+</div>
+
+<div id="StartGame">
+  <h2>¡Bienvenido!</h2>
+
+  <button type="button" name="button" onclick="juego.nuevoJuego()">Jugar</button>
+</div>
+</body>
+</html>
